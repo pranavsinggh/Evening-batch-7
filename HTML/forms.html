@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get" autocomplete="off" novalidate>
+      <fieldset>
+        <legend>Personal</legend>
+        <label for="username">Name :</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          autocomplete="off"
+          
+        /><br /><br />
+        <label for="email">Email :</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          autocomplete="on"
+          required
+          placeholder="Enter email"
+          size="50"
+    
+       
+        /><br /><br />
+        <label for="password">Password :</label>
+        <input id="password" type="password" name="password" />
+        <br /><br />
+        <label for="dob">DOB :</label>
+        <input id="dob" type="date" name="dob"  autofocus/>
+        <br /><br />
+        <label for="no">Number :</label>
+        <input id="no" type="tel" name="number" />
+        <br /><br />
+        <label for="age">Age :</label>
+        <input id="age" type="number" name="age"  min="18" max="65" step="5" />
+        <br /><br />
+        <label for="">Gender</label>
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+        <input type="radio" name="gender" value="Others" />Others <br /><br />
+        <label for="">Skills</label>
+        <input type="checkbox" name="Skills" value="HTML" />HTML
+        <input type="checkbox" name="Skills" value="CSS" />CSS
+        <input type="checkbox" name="Skills" value="JS" />JS
+        <input type="checkbox" name="Skills" value="React" />React <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Extra</legend>
+        <label for="">States</label>
+        <select name="states" id="" multiple>
+          <optgroup label="South india">
+            <option value="tamilnadu">tamilnadu</option>
+            <option value="karnataka">karnataka</option>
+            <option value="kerala">kerala</option>
+          </optgroup>
+          <optgroup label="North india">
+            <option value="Delhi">Delhi</option>
+            <option value="UP">UP</option>
+            <option value="Haryana">Haryana</option>
+          </optgroup></select
+        ><br /><br />
+        <label for="">Adress</label>
+        <textarea name="" rows="10" cols="20" id=""></textarea>
+      </fieldset>
+      <input type="search" />
+      <input type="range" />
+      <input type="file" />
+      <input type="url" />
+      <br /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Click</button>
+    </form>
+  </body>
+</html>
