@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div article{
+            color: red;
+        }
+        div>article{
+            background-color: black;
+        }
+        div section>article{
+            background-color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <article>First Article outside div</article>
+    <div>
+      <section>Section inside div</section>
+      <article>
+        Article inside div
+        <section>Section inside article inside div</section>
+        <p>Para inside article inside div</p>
+      </article>
+      <header>
+        Header inside div
+        <span> Span inside header inside div </span>
+      </header>
+      <main>
+        Main inside div
+        <section>
+          Section inside main inside div
+          <article>Article inside section inside main inside div</article>
+        </section>
+      </main>
+    </div>
+    <article>Second Article outside div</article>
+  </body>
+</html>
